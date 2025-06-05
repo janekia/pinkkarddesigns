@@ -1,159 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DippyDoo</title>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="description" content="Pinkkard Design creates clean, responsive websites for small businesses, creatives, and entrepreneurs. Let's bring your ideas to life.">
+  <meta name="google" content="notranslate" />
+ <meta name="author" content="Pinkkard Design">
+  <!-- Keywords for SEO -->
+<meta name="keywords" content="web design, freelance web developer, small business websites, portfolio websites, Pinkkard Design, Charlotte web design">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<!-- Open Graph for Social Sharing -->
+<meta property="og:title" content="Pinkkard Design - Freelance Web Developer">
+<meta property="og:description" content="Get a custom website that’s beautiful, functional, and made just for you. Built by Pinkkard Design.">
+<meta property="og:image" content="https://pinkkarddesign.com/preview.jpg"> <!-- Optional thumbnail image -->
+<meta property="og:url" content="https://pinkkarddesign.com">
 
-   <link href="https://cdn.reflowhq.com/v2/toolkit.min.css" rel="stylesheet" />
-   <link rel="icon" href="assets/favicon-16x16.png" type="image/x-icon">
+<!-- Viewport for Mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <!-- Reflow Storefront SDK -->
-  <!--<script src="https://unpkg.com/@reflowhq/storefront@2.0.0-beta.3/dist/storefront.js" defer></script>-->
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
 
-    
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-icon-180x180.png">
+  <link href="/assets/images/favicon.ico" rel="icon">
+
+  <title>Pinkkard Design</title>
+
+  <link href="public/main.d8e0d294.css" rel="stylesheet">
+  <link href="public/style.css" rel="stylesheet">
+
 </head>
 
-<body>
-<!--Navbar-->
- <nav class="navbar navbar-expand-lg custom-navbar px-3">
-  <div class="container-fluid">
-    <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="assets/Dippydoo Logo -transBack.png" alt="DippyDoo Logo" width="150" height="100" class="me-2">
-    </a>
+<body class="">
 
-    <!-- Toggler for small screens -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+  <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="#">
+  <img src="assets/images/Soft-Pink-and-Gray-Tones.png" alt="Logo" width="60" height="50" class="navbar-logo">
+</a>
+    <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- Nav links -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-white" href="shop.html">Shop</a>
-        </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
-             Terms & Policies
-             </a>
-          <ul class="dropdown-menu" style="background-color: #9c5a4e;">
-                <li><a class="dropdown-item text-white" href="#terms" style="background-color: #9c5a4e;">Terms and Conditions</a></li>
-                <li><a class="dropdown-item text-white" href="#privacy" style="background-color: #9c5a4e;">Privacy Policy</a></li>
-                <li><a class="dropdown-item text-white" href="#return" style="background-color: #9c5a4e;">Return & Refund Policy</a></li>
-                <li><a class="dropdown-item text-white" href="#shipping" style="background-color: #9c5a4e;">Shipping Policy</a></li>
-            </ul>
-        </li>
-         <li class="nav-item">
-            <a class="nav-link text-white" href="#contact">Contact</a>
-        </li>
-     </ul> 
-      <!-- Cart Button -->
-      <a href="cart.html" class="btn btn-primary ms-3">View Cart</a>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+         <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#language">Language</a></li>
+        <li class="nav-item"><a class="nav-link" href="#socials">Socials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
   </div>
 </nav>
-
-
-  <!-- Hero / Welcome -->
-  <header class="text-center py-5">
-    <h1>Welcome to DippyDoo</h1>
-    <p class="lead text-muted">Browse our latest products and deals.</p>
-  </header>
-
-<main class="container py-5"id="about">
-    <h2 class="text-center mb-4">About DippyDoo</h2>
-    <p class="lead text-center">
-      DippyDoo is your go-to destination for unique vintage treasures and lovingly refurbished finds. 
-      Every piece we offer has a story—and we believe in giving old items new life. Whether you're into retro vibes or upcycled charm, 
-      we’ve got something special waiting just for you.
-    </p>
-  </main>
-
-<hr>
-
-<!--terms-->
-<section class="container py-5" id="terms">
-  <h2 class="text-center mb-4">Terms & Conditions</h2>
-  <p>
-    By accessing or using the DippyDoo website, you agree to be bound by the following terms and conditions. Please read them carefully.
-  </p>
-  <ul>
-    <li><strong>Use of Website:</strong> This site is intended for personal, non-commercial use. You may not copy, reproduce, or distribute any part of the website without our permission.</li>
-    <li><strong>Product Descriptions:</strong> We do our best to accurately describe and photograph each item. However, because our products are vintage or refurbished, they may show signs of wear. All items are sold “as-is.”</li>
-    <li><strong>Pricing:</strong> All prices are listed in USD. We reserve the right to change prices at any time without notice.</li>
-    <li><strong>Order Acceptance:</strong> We reserve the right to cancel or refuse any order at our discretion. If we do so after your card has been charged, you will receive a full refund.</li>
-    <li><strong>Limitation of Liability:</strong> DippyDoo is not liable for any indirect or incidental damages related to your use of this site or products purchased from it.</li>
-    <li><strong>Changes:</strong> These terms may be updated from time to time. Continued use of our website means you accept any changes made.</li>
-  </ul>
-  <p>
-    If you have any questions about our Terms & Conditions, feel free to <a href="mailto:info@dippydoo.com">contact us</a>.
-  </p>
+<!--hero-->
+<section class="bg-light text-center py-5" style="background-image: url('your-background.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+    <!-- Logo / Brand Name -->
+    <img src="assets/images/Lettermark Logo with Soft Pink and Gray Tones.png" alt="Brand Logo" style="max-width: 300px;" class="mb-3">
+  </div>
 </section>
-<hr>
-<!--privacy-->
-<section class="container py-5" id="privacy">
-  <h2 class="text-center mb-4">Privacy Policy</h2>
-  <p>
-    Your privacy is important to us. DippyDoo collects only the information needed to fulfill your order and provide customer service. We will never sell or share your information with third parties.
-    <br><br>
-    For questions or concerns about how we handle your data, feel free to contact us.
-  </p>
-</section>
+  <!-- Add your content of header -->
+  <div class="background-color-layer"></div>
+  <main class="content-wrapper">
+    <header class="white-text-container section-container">
+      <div class="text-center">
+        <h1>I am Janekia Pinkard</h1>
+        <p>Web designer</p>
+        <p>
 
-<hr>
-<!--return-->
-<section class="container py-5" id="return">
-  <h2 class="text-center mb-4">Return & Refund Policy</h2>
-  <p>
-    Due to the unique and often one-of-a-kind nature of our items, all sales are final. Please review item descriptions and photos carefully before purchasing.
-    <br><br>
-    If your item arrives damaged or not as described, contact us within 7 days of delivery. We’ll do our best to resolve the issue, including refunds or store credit when applicable.
-  </p>
-</section>
+          </a>
+          <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/in/janekia-pinkard/" title="linkedin page">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="fa-icon fa-icon-2x" href="https://github.com/janekia?tab=repositories" title="github page">
+            <i class="fa fa-github"></i>
+          </a>
+        </p>
+      </div>
+    </header>
 
-<hr>
-<!--shipping-->
-<section class="container py-5" id="shipping">
-  <h2 class="text-center mb-4">Shipping Policy</h2>
-  <p>
-    At DippyDoo, we aim to ship your vintage treasures within 3–5 business days of purchase. All orders are processed with care and shipped via trusted carriers.
-    <br><br>
-    Please allow 5–10 business days for delivery depending on your location. Once your order ships, you'll receive a tracking number via email.
-  </p>
-</section>
-<hr>
+
+
+    <!-- Add your site or app content here -->
+
+    <!--About-->
+    <div class="container" id="about">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="card">
+            <div class="card-block">
+              <h1>About me</h1>
+              <div class="row">
+                <div class="col-md-4">
+                  <p><img src="/assets/images/img-mee.jpg" class="img-me" alt="pic of Janekia Pinkard" style="width: 100%;"></p>
+                </div>
+                <div class="col-md-8">
+
+                   <p class="lead">
+        Hi, I’m Janekia — the creator behind <strong>Pinkkard Design</strong>. I specialize in building websites that are not only visually appealing but also functional and easy to use. Whether you're a small business owner, a creative, or someone with a big idea, I’m here to help bring your vision to life online.
+      </p>
+      <p>
+        I started designing websites because I love blending creativity with problem-solving. I’ve built personal projects like my own resume site, ecommerce mockups, and a voice acting portfolio for my fiancé. Every project is a chance to learn, improve, and create something meaningful.
+      </p>
+      <p>
+        My goal is to make the web more beautiful and more accessible—one custom site at a time. When you work with me, you’re not just hiring a developer. You’re partnering with someone who truly cares about your project.
+      </p>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--Projects-->
+          <div class="card" id="projects">
+            <div class="card-block">
+              <h2>Projects</h2>
+              <div class="row">
+                <div class="col-md-5">
+                  <a href="http://thevoicefitz.com" target="_blank">
+                    <img src="assets/images/thevoicefitz.png" class="img-responsive" alt="the voice fitz website">
+                  </a>
+                  <h3 class="h5">The Voice Fitz</h3>
+                </div>
+                
+                <div class="col-md-5">
+                  <a href="dippydoo.netlify.app" target="_blank">
+                    <img src="/assets/images/Screenshot 2025-06-04 143003.png" class="img-responsive" alt="dippy doo- vintage store">
+                  </a>
+                  <h3 class="h5">DippyDoo - Vintage store</h3>
+                </div>
+                <div class="row">
+                <div class="col-md-5">
+                  <a href="janekia-resume.com" target="_blank">
+                    <img src="/assets/images/me-resume.png" class="img-responsive" alt="janekia's resume">
+                  </a>
+                  <h3 class="h5">Janekia's Resume</h3>
+                </div>
+                <div class="col-md-5">
+                  <a href="https://elegant-yonath-e67447.netlify.app/" target="_blank">
+                    <img src="/assets/images/nucamp-website.png" class="img-responsive" alt="Nucamp Website">
+                  </a>
+                  <h3 class="h5">NuCamp Website</h3>
+                </div>
+                </div>
+                <div class="col-md-5">
+                  <a href="https://venerable-hamster-74cf57.netlify.app/" target="_blank">
+                    <img src="/assets/images/drawing-site.png" class="img-responsive" alt="drawing-website">
+                  </a>
+                  <h3 class="h5">Drawing Website</h3>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+<!--work-->
+          <div class="card" id="work">
+            <div class="card-block">
+              <h2>Work</h2>
+              <div class="work-experience">
+<h3>Freelance Web Developer</h3>
+<h3 class="h5 date-title">Remote / Charlotte, NC | 2023 – Present</h3>
+
+<ul style="list-style-type: disc; padding-left: 20px;">
+  <li>-Voice Acting Portfolio Website: Designed and launched a customized website for a professional voice actor to showcase demo reels, testimonials, and contact info. Used HTML, CSS, and Bootstrap for responsive design.</li>
+  <li>-E-commerce Website (DippyDoo): Built a mock e-commerce site using HTML, CSS, and Bootstrap. Included shopping cart functionality, styled product pages, and integrated placeholder checkout features for front-end practice.</li>
+  <li>-Resume Portfolio Website: Developed a personal online resume to highlight professional experience and web development skills. Implemented responsive design and smooth navigation for recruiter engagement.</li>
+  <li>-Project Showcase Website (Nucamp): Created a full project portfolio site as part of Nucamp’s web dev program. Displayed completed coursework, code samples, and project descriptions using clean layout principles.</li>
+  <li>-Focused on creating clean, mobile-first designs with user-friendly navigation, custom styling, and code organization best practices.</li>
+  <li>-Practiced version control with GitHub and collaborated with peers through code reviews and feedback loops.</li>
+</ul>
+
+</div>
+
+<!--Testimonials-->
+<div class="card" id="testimonials">
+  <div class="card-block">
+        <h1 class="">Work Testimonials</h1>
+        <div class="row gy-4">
+          <!-- Testimonial 1 -->
+          <div class="col-md-6">
+            <div class="border rounded p-3 shadow-sm bg-light">
+              <p class="mb-2 fst-italic">"Janekia consistently goes above and beyond. Her attention to detail and dedication to excellence is unmatched."</p>
+              <p class="mb-0 fw-bold">— Fitzroy Joseph., The Voice Fitz</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <!--<div class="col-md-6">
+            <div class="border rounded p-3 shadow-sm bg-light">
+              <p class="mb-2 fst-italic">"Her creativity and ability to streamline workflows made a huge impact on our team's efficiency."</p>
+              <p class="mb-0 fw-bold">— Michael B., Project Manager</p>
+            </div>
+          </div>-->
+
+          <!-- Testimonial 3 -->
+          <!--<div class="col-md-6">
+            <div class="border rounded p-3 shadow-sm bg-light">
+              <p class="mb-2 fst-italic">"Janekia brings positive energy and a growth mindset to every challenge—an asset to any team."</p>
+              <p class="mb-0 fw-bold">— Lisa G., Operations Director</p>
+            </div>
+          </div>-->
+
+          <!-- Testimonial 4 -->
+         <!-- <div class="col-md-6">
+            <div class="border rounded p-3 shadow-sm bg-light">
+              <p class="mb-2 fst-italic">"Her organizational skills and reliability helped us meet tight deadlines smoothly and consistently."</p>
+              <p class="mb-0 fw-bold">— Devin R., Senior Analyst</p>
+            </div>
+          </div>
+        </div>-->
+
+      
+  </div>
+</div>
+
+                  </div>
+                </div>
+
+<!--education-->
+                <div class="card" id="education">
+                  <div class="card-block">
+                    <h2>Education</h2>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="education-experience">
+                          <small class="date">02/2024 - 03/2024</small>
+                          <h3 class="h5 date-title">Basic Analytics</h3>
+                          <p>Grand Circus</p>
+                        </div>
+
+                      </div>
+                      <div class="col-md-4">
+                        <div class="education-experience">
+                          <small class="date">10/2020 - 11/2020
+                          </small>
+                          <h3 class="h5 date-title"> Full Stack development</h3>
+                          <p>Nucamp Coding Bootcamp </p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="education-experience">
+                          <small class="date">03/2011 – 01/2012
+                          </small>
+                          <h3 class="h5 date-title">Information Technology</h3>
+                          <p>Pace University </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+<!--langauge-->
+                <div class="card" id="language">
+                  <div class="card-block">
+                    <h2>Language</h2>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="language-experience">
+                          <h3 class="h5">English <small>Fluent</small></h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Wrapper for slides -->
+<!--Social-->
+                <div class="card" id="socials">
+                  <div class="card-block">
+                    <h2>Social Network</h2>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <p class="social-buttons"><a href="https://www.linkedin.com/in/janekia-pinkard/" title=""><span
+                              class="social-round-icon fa-icon"><i class="fa fa-linkedin"></i></span>Janekia Pinkard</a>
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="social-buttons"><a href="https://github.com/janekia?tab=repositories" title=""><span
+                              class="social-round-icon fa-icon"><i class="fa fa-github"></i></span>Janekia Pinkard</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+               <!-- <div class="card">
+                  <div class="card-block">
+                    <h2>Contact</h2>
+                    <form action="/send-message" method="POST">
+                    <form action="/.netlify/functions/message" method="POST">
+
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" rows="5" name="message" placeholder="Enter your message"
+                          required></textarea>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Send message</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>-->
+
 <!--contact-->
- <main class="container py-5" id="contact">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <div class="contact-info text-center">
-      <p><strong>Phone:</strong> (888) 888-8888</p>
-      <p><strong>Address:</strong> ABC Sesame Street</p>
-      <p><strong>Email:</strong> <a href="mailto:info@dippydoo.com">info@dippydoo.com</a></p>
-    </div>
+          <div class="card" id="contact">
+            <div class="card-block">
+              <h2>Contact</h2>
+            <form action="https://formsubmit.co/pinkkarddesign@gmail.com" method="POST">
+      <!-- Replace your@email.com with your real email -->
+
+      <!-- Honeypot to prevent spam (optional but recommended) -->
+      <input type="text" name="_honey" style="display:none">
+
+      <!-- Disable Captcha (optional) -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Success redirect (optional) -->
+      <input type="hidden" name="_next" value="https://pinkkarddesigns.com/thank-you.html">
+
+      <div class="form-floating mb-3">
+        <input class="form-control" id="emailAddress" name="email" type="email" placeholder="Email Address" required>
+        <label for="emailAddress">Email Address</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <textarea class="form-control" id="message" name="message" placeholder="Message" style="height: 10rem;" required></textarea>
+        <label for="message">Message</label>
+      </div>
+
+      <div class="d-grid">
+        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+      </div>
+            </form>
+          </div>
+        </div>
+        <!--<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>-->
+
   </main>
- <hr>
+  <footer class="footer-container white-text-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p><img src="/assets/images/mashup-icon.svg" alt=""></p>
+
+            <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/in/janekia-pinkard/" title="Janekia's linkedin">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="fa-icon fa-icon-2x" href="https://github.com/janekia?tab=repositories/" title="Janekia's github">
+              <i class="fa fa-github"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script
-  src="https://cdn.reflowhq.com/v2/toolkit.min.js"
-  data-reflow-project="300374271"
-  defer
-></script>
-<!--<script src="https://cdn.reflowhq.com/reflow.js" defer></script>-->
-<script src="script.js"></script>
-</body>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      scrollRevelation('.card');
+    });
+  </script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+-->
+  <!--<script type="text/javascript" src="../public/main.bc58148c.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.querySelector('form');
+  
+      form.addEventListener('submit', async function (event) {
+          event.preventDefault(); // Prevent page reload
+  
+          const formData = new FormData(form);
+          const data = Object.fromEntries(formData.entries());
+  
+          try {
+              const response = await fetch('/send-message', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(data),
+              });
+  
+              const resultText = await response.text(); // Read response as text
+              let result;
+  
+              try {
+                  result = JSON.parse(resultText); // Try parsing as JSON
+              } catch {
+                  throw new Error(`Unexpected response format: ${resultText}`);
+              }
+  
+              if (response.ok) {
+                  alert('Message sent successfully!');
+                  form.reset(); // Clear form after successful submission
+              } else {
+                  alert(`Error: ${result.error}`);
+              }
+          } catch (error) {
+              console.error('Error sending message:', error);
+              alert('Failed to send message. Please try again.');
+          }
+      });
+  });
+
+  app.post('/send-message', (req, res) => {
+    console.log('Received data:', req.body);
+});
+console.log('EMAIL_USER:', process.env.SMTP_USER);
+console.log('EMAIL_PASS:', process.env.SMTP_PASS ? 'Loaded' : 'Missing');
+
+transporter.verify((error, success) => {
+  if (error) {
+    console.error(`SMTP connection error: ${error}`);
+  } else {
+    console.log('SMTP Server is ready to take messages');
+  }
+});
+
+
+</script>-->
+
 </html>
