@@ -41,7 +41,8 @@
 
 .navbar-logo {
   vertical-align: middle;
-  margin-top: -5px; /* Adjust as needed */
+  margin-top: -5px;
+  /* Adjust as needed */
 }
 
 .navbar-brand {
@@ -49,12 +50,15 @@
   align-items: center;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
 @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-toggler {display: none;}
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
 }
