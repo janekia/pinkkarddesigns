@@ -50,15 +50,88 @@
   align-items: center;
 }
 
-ul,
-li {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
+/* ul,
+li{
+  list-style:none;
+  padding-left:0;
+  margin:0;
+} */
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-toggler {
     display: none;
   }
+}
+/* put the items side‑by‑side */
+.language-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2.5rem;            /* spacing between items */
+  justify-content:center;/* ⬅️ centers the row inside the card */
+}
+
+.language-experience{
+  position:relative;
+}
+
+/* pink divider */
+.language-experience + .language-experience::before{
+  content:"";
+  position:absolute;
+  left:-1.25rem;         /* half of the 2.5 rem gap */
+  top:0;
+  width:2px;
+  height:100%;
+  background:#ff69b4;
+}
+/* === pill‑button look for navbar links === */
+.navbar-custom .btn-nav{
+  border:2px solid #ff69b4;          /* pink outline */
+  color:#ff69b4;                     /* pink text     */
+  padding:.45rem 1.1rem;             /* buttony feel   */
+  border-radius:50rem;               /* full pill      */
+  transition:all .25s ease-in-out;
+  margin:0 .35rem;                   /* even spacing   */
+  line-height:1;                     /* vertically tidy*/
+}
+
+/* hover / active / dropdown‑show states */
+.navbar-custom .btn-nav:hover,
+.navbar-custom .btn-nav:focus,
+.navbar-custom .btn-nav.active,
+.navbar-custom .show > .btn-nav{     /* keeps dropdown toggle filled */
+  background:#ff69b4;               /* solid pink fill   */
+  color:#fff;                       /* white text        */
+  text-decoration:none;             /* remove underline  */
+}
+@media (min-width: 768px){
+  .education-row .col-md-4{
+    position:relative;              /* anchor for ::after */
+  }
+  .education-row .col-md-4:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    width:2px;                      /* line thickness */
+    height:100%;
+    background:#ff69b4;             /* 💖 pink */
+  }
+}
+
+/* brand‑specific tweak */
+.learn-btn{
+  background:#ff69b4;         /* 💖 pink fill */
+  border-color:#ff69b4;
+  color:#fff;
+  border-radius:50rem;        /* pill shape */
+  transition:all .25s ease-in-out;
+}
+
+.learn-btn:hover,
+.learn-btn:focus{
+  background:#e858a4;         /* slightly darker on hover */
+  border-color:#e858a4;
+  color:#fff;
+  text-decoration:none;       /* keep it clean */
 }

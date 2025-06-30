@@ -39,7 +39,7 @@
 
 <body class="">
   <!--NavBar-->
-  <nav class="navbar navbar-expand-lg navbar-custom">
+   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container">
       <!-- Brand (logo) -->
       <a class="navbar-brand d-flex align-items-center" href="#">
@@ -54,16 +54,9 @@
 
       <!-- Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#language">Language</a></li>
-          <li class="nav-item"><a class="nav-link" href="#socials">Socials</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
+        <ul class="navbar-nav w-100 justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <!-- Policies dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -73,12 +66,12 @@
               <li><a class="dropdown-item" href="/terms.html">Terms & Conditions</a></li>
             </ul>
           </li>
-
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
 
 
   <!--hero-->
@@ -110,45 +103,7 @@
       </div>
     </header>
 
-
-
-    <!-- Add your site or app content here -->
-
-    <!--About-->
-    <div class="container" id="about">
-      <div class="row">
-        <div class="col-xs-12">
-
-          <div class="card">
-            <div class="card-block">
-              <h1>About me</h1>
-              <div class="row">
-                <div class="col-md-4">
-                  <p><img src="/assets/images/img-mee.jpg" class="img-me" alt="pic of Janekia Pinkard"
-                      style="width: 100%;"></p>
-                </div>
-                <div class="col-md-8">
-
-                  <p class="lead">
-                    Hi, I’m Janekia — the creator behind <strong>Pinkkard Design</strong>. I specialize in building
-                    websites that are not only visually appealing but also functional and easy to use. Whether you're a
-                    small business owner, a creative, or someone with a big idea, I’m here to help bring your vision to
-                    life online.
-                  </p>
-                  <p>
-                    I started designing websites because I love blending creativity with problem-solving. I’ve built
-                    personal projects like my own resume site, ecommerce mockups, and a voice acting portfolio. Every
-                    project is a chance to learn, improve, and create something meaningful.
-                  </p>
-                  <p>
-                    My goal is to make the web more beautiful and more accessible—one custom site at a time. When you
-                    work with me, you’re not just hiring a developer. You’re partnering with someone who truly cares
-                    about your project.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                
           <!--Services-->
           <div class="card mt-4">
             <div class="card-block p-4">
@@ -185,7 +140,10 @@
               </p>
               <!-- Learn More Button -->
               <div class="text-center mt-4">
-                <a href="services.html" class="btn btn-outline-primary">Learn More</a>
+                <!-- keeps link behavior, shows as button -->
+                <a href="services.html" class="btn btn-primary btn-lg learn-btn">
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -246,152 +204,6 @@
             </div>
           </div>
 
-          <!--work-->
-          <div class="card" id="work">
-            <div class="card-block">
-              <h2>Work</h2>
-              <div class="work-experience">
-                <h3>Freelance Web Developer</h3>
-                <h3 class="h5 date-title">Remote / Charlotte, NC | 2023 – Present</h3>
-
-                <ul style="list-style-type: disc; padding-left: 20px;">
-                  <li>-Voice Acting Portfolio Website: Designed and launched a customized website for a professional
-                    voice actor to showcase demo reels, testimonials, and contact info. Used HTML, CSS, and Bootstrap
-                    for responsive design.</li>
-                  <li>-E-commerce Website (DippyDoo): Built a mock e-commerce site using HTML, CSS, and Bootstrap.
-                    Included shopping cart functionality, styled product pages, and integrated placeholder checkout
-                    features for front-end practice.</li>
-                  <li>-Resume Portfolio Website: Developed a personal online resume to highlight professional experience
-                    and web development skills. Implemented responsive design and smooth navigation for recruiter
-                    engagement.</li>
-                  <li>-Project Showcase Website (Nucamp): Created a full project portfolio site as part of Nucamp’s web
-                    dev program. Displayed completed coursework, code samples, and project descriptions using clean
-                    layout principles.</li>
-                  <li>-Focused on creating clean, mobile-first designs with user-friendly navigation, custom styling,
-                    and code organization best practices.</li>
-                  <li>-Practiced version control with GitHub and collaborated with peers through code reviews and
-                    feedback loops.</li>
-                </ul>
-
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-          <!--Testimonials-->
-          <div class="card" id="testimonials">
-            <div class="card-block">
-              <h1 class="">Work Testimonials</h1>
-              <div class="row gy-4">
-                <!-- Testimonial 1 -->
-                <div class="col-md-6">
-                  <div class="border rounded p-3 shadow-sm bg-light">
-                    <p class="mb-2 fst-italic">"Janekia consistently goes above and beyond. Her attention to detail and
-                      dedication to excellence is unmatched."</p>
-                    <p class="mb-0 fw-bold">— Fitzroy Joseph., The Voice Fitz</p>
-                  </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <!--<div class="col-md-6">
-                      <div class="border rounded p-3 shadow-sm bg-light">
-                        <p class="mb-2 fst-italic">"Her creativity and ability to streamline workflows made a huge impact on our team's efficiency."</p>
-                        <p class="mb-0 fw-bold">— Michael B., Project Manager</p>
-                      </div>
-                    </div>-->
-
-                <!-- Testimonial 3 -->
-                <!--<div class="col-md-6">
-                      <div class="border rounded p-3 shadow-sm bg-light">
-                        <p class="mb-2 fst-italic">"Janekia brings positive energy and a growth mindset to every challenge—an asset to any team."</p>
-                        <p class="mb-0 fw-bold">— Lisa G., Operations Director</p>
-                      </div>
-                    </div>-->
-
-                <!-- Testimonial 4 -->
-                <!-- <div class="col-md-6">
-                      <div class="border rounded p-3 shadow-sm bg-light">
-                        <p class="mb-2 fst-italic">"Her organizational skills and reliability helped us meet tight deadlines smoothly and consistently."</p>
-                        <p class="mb-0 fw-bold">— Devin R., Senior Analyst</p>
-                      </div>
-                    </div>
-                  </div>-->
-
-              </div>
-            </div>
-
-          </div>
-
-          <!--education-->
-          <div class="card" id="education">
-            <div class="card-block">
-              <h2>Education</h2>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="education-experience">
-                    <small class="date">02/2024 - 03/2024</small>
-                    <h3 class="h5 date-title">Basic Analytics</h3>
-                    <p>Grand Circus</p>
-                  </div>
-
-                </div>
-                <div class="col-md-4">
-                  <div class="education-experience">
-                    <small class="date">10/2020 - 11/2020
-                    </small>
-                    <h3 class="h5 date-title"> Full Stack development</h3>
-                    <p>Nucamp Coding Bootcamp </p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="education-experience">
-                    <small class="date">03/2011 – 01/2012
-                    </small>
-                    <h3 class="h5 date-title">Information Technology</h3>
-                    <p>Pace University </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--langauge-->
-          <div class="card" id="language">
-            <div class="card-block">
-              <h2>Language</h2>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="language-experience">
-                    <h3 class="h5">English <small>Fluent</small></h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Wrapper for slides -->
-          <!--Social-->
-          <div class="card" id="socials">
-            <div class="card-block">
-              <h2>Social Network</h2>
-              <div class="row">
-                <div class="col-md-3">
-                  <p class="social-buttons"><a href="https://www.linkedin.com/in/janekia-pinkard/" title=""><span
-                        class="social-round-icon fa-icon"><i class="fa fa-linkedin"></i></span>Janekia Pinkard</a>
-                  </p>
-                </div>
-                <div class="col-md-3">
-                  <p class="social-buttons"><a href="https://github.com/janekia?tab=repositories" title=""><span
-                        class="social-round-icon fa-icon"><i class="fa fa-github"></i></span>Janekia Pinkard</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <!--contact-->
           <div class="card" id="contact">
@@ -433,7 +245,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <p><img src="/assets/images/Soft-Pink-and-Gray-Tones.png" alt="pinkkarddesign logo"></p>
+          <p><img src="/assets/images/Soft-Pink-and-Gray-Tones.png" alt="pinkkarddesign logo" width="50" height="auto"></p>
 
           <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/in/janekia-pinkard/" title="Janekia's linkedin">
             <i class="fa fa-linkedin"></i>
