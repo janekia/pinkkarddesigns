@@ -5,20 +5,23 @@
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta name="description" content="Pinkkard Design creates clean, responsive websites for small businesses, creatives, and entrepreneurs. Let's bring your ideas to life.">
+  <meta name="description"
+    content="Pinkkard Design creates clean, responsive websites for small businesses, creatives, and entrepreneurs. Let's bring your ideas to life.">
   <meta name="google" content="notranslate" />
- <meta name="author" content="Pinkkard Design">
+  <meta name="author" content="Pinkkard Design">
   <!-- Keywords for SEO -->
-<meta name="keywords" content="web design, freelance web developer, small business websites, portfolio websites, Pinkkard Design, Charlotte web design">
+  <meta name="keywords"
+    content="web design, freelance web developer, small business websites, portfolio websites, Pinkkard Design, Charlotte web design">
 
-<!-- Open Graph for Social Sharing -->
-<meta property="og:title" content="Pinkkard Design - Freelance Web Developer">
-<meta property="og:description" content="Get a custom website that’s beautiful, functional, and made just for you. Built by Pinkkard Design.">
-<meta property="og:image" content="https://pinkkarddesign.com/preview.jpg"> <!-- Optional thumbnail image -->
-<meta property="og:url" content="https://pinkkarddesign.com">
+  <!-- Open Graph for Social Sharing -->
+  <meta property="og:title" content="Pinkkard Design - Freelance Web Developer">
+  <meta property="og:description"
+    content="Get a custom website that’s beautiful, functional, and made just for you. Built by Pinkkard Design.">
+  <meta property="og:image" content="https://pinkkarddesign.com/preview.jpg"> 
+  <meta property="og:url" content="https://pinkkarddesign.com">
 
-<!-- Viewport for Mobile -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Viewport for Mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <!-- Disable tap highlight on IE -->
@@ -31,44 +34,56 @@
 
   <link href="public/main.d8e0d294.css" rel="stylesheet">
   <link href="public/style.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
 </head>
 
-<body>
- <!--NavBar-->
+<body class="">
+  <!--NavBar-->
    <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-      <!-- Brand (logo) -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/images/Soft-Pink-and-Gray-Tones.png" alt="Logo" width="60" height="50" class="navbar-logo">
-      </a>
+  <div class="container">
 
-      <!-- Mobile toggler (appears < 992 px only) -->
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/images/Soft-Pink-and-Gray-Tones.png"
+           alt="Logo" width="60" height="50" class="navbar-logo">
+    </a>
 
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-100 justify-content-center">
+    <!-- MOBILE‑ONLY hamburger -->
+    <button class="navbar-toggler border-0 d-lg-none" 
+            type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-1"></i>                    <!-- ② -->
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- centred UL already looks good; just add mx-auto for safety -->
+      <ul class="navbar-nav mx-auto">                    <!-- ③ -->
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <!-- Policies dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Policies</a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/privacy.html">Privacy Policy</a></li>
-              <li><a class="dropdown-item" href="/terms.html">Terms & Conditions</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        </ul>
-      </div>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- Policies dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Policies
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/privacy.html">Privacy Policy</a></li>
+            <li><a class="dropdown-item" href="/terms.html">Terms & Conditions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
 
 <div class="card mt-4">
   <div class="card-block p-4">

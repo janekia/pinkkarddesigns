@@ -112,6 +112,10 @@ li{
   line-height:1;                     /* vertically tidy*/
 }
 
+.navbar-custom {
+  position: relative;
+  z-index: 3000; /* Ensure navbar is above page content */
+}
 /* hover / active / dropdown‑show states */
 .navbar-custom .btn-nav:hover,
 .navbar-custom .btn-nav:focus,
@@ -151,4 +155,31 @@ li{
   border-color:#e858a4;
   color:#fff;
   text-decoration:none;       /* keep it clean */
+}
+
+.navbar-toggler .bi {
+  color: #ffffff;
+}
+/* --- NAV BAR CENTRING --- */
+@media (min-width: 992px) {              /* desktop breakpoint */
+  .navbar .container {                   /* make a positioning context */
+    position: relative;
+  }
+  .navbar .navbar-nav {                  /* centre the UL itself */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.dropdown-menu {
+  position: absolute !important;
+  z-index: 3100 !important;
+}
+.card {
+  overflow: visible !important;  /* prevent clipping */
+}
+.container, .row, .col-md-4, .card { position: static; overflow: visible; }
+.navbar .container {
+  position: relative;
+  z-index: 3000;  /* higher than dropdown */
 }

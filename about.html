@@ -34,43 +34,56 @@
 
   <link href="public/main.d8e0d294.css" rel="stylesheet">
   <link href="public/style.css" rel="stylesheet">
+  <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 </head>
 
 <body class="">
   <!--NavBar-->
-  <nav class="navbar navbar-expand-lg navbar-custom">
-    <div class="container">
-      <!-- Brand (logo) -->
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/images/Soft-Pink-and-Gray-Tones.png" alt="Logo" width="60" height="50" class="navbar-logo">
-      </a>
+   <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
 
-      <!-- Mobile toggler (appears < 992 px only) -->
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/images/Soft-Pink-and-Gray-Tones.png"
+           alt="Logo" width="60" height="50" class="navbar-logo">
+    </a>
 
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav w-100 justify-content-center">
+    <!-- MOBILE‑ONLY hamburger -->
+    <button class="navbar-toggler border-0 d-lg-none" 
+            type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-1"></i>                    <!-- ② -->
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- centred UL already looks good; just add mx-auto for safety -->
+      <ul class="navbar-nav mx-auto">                    <!-- ③ -->
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <!-- Policies dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Policies</a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/privacy.html">Privacy Policy</a></li>
-              <li><a class="dropdown-item" href="/terms.html">Terms & Conditions</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        </ul>
-      </div>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <!-- Policies dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+             role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Policies
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/privacy.html">Privacy Policy</a></li>
+            <li><a class="dropdown-item" href="/terms.html">Terms & Conditions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
 
 
   <!--hero-->
@@ -271,7 +284,7 @@
           <div class="card" id="contact">
             <div class="card-block">
               <h2>Contact</h2>
-              <form action="https://formsubmit.co/pinkkarddesign@gmail.com" method="POST">
+                <form id="contactForm" data-sb-form-api-token="de9fd638-c97d-420d-967a-8e4d48af475a">
                 <!-- Replace your@email.com with your real email -->
 
                 <!-- Honeypot to prevent spam (optional but recommended) -->
@@ -326,7 +339,6 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function (event) {
       scrollRevelation('.card');
